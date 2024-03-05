@@ -1,5 +1,5 @@
 name: Node.js Package
-
+run-name: Common package
 on: push
 
 jobs:
@@ -26,6 +26,9 @@ jobs:
 
       - name: Install Yarn
         run: npm install -g yarn
+
+      - name: Install packages
+        run: yarn
 
       - name: Publish
         run: yarn publish:test
