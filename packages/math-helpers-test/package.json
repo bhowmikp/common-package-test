@@ -1,0 +1,20 @@
+{
+  "name": "@bhowmikp/math-helpers-test",
+  "version": "1.0.1",
+  "main": "./dist/index.ts",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "latest"
+  },
+  "exports": {
+    ".": "./lib/index.ts"
+  },
+  "scripts": {
+    "build": "tsup lib/index.ts --format cjs --dts",
+    "publish:locally": "yalc push",
+    "publish:test": "yarn publish"
+  }
+}
